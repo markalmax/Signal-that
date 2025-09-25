@@ -20,13 +20,15 @@ func _physics_process(delta: float) -> void:
 		if ray.is_colliding():
 			is_grappling = true
 			grapple_point = ray.get_collision_point()
+		else:
+			is_grappling = false
 	if Input.is_action_just_released("Grab"):
 		is_grappling = false
 
 	if is_grappling:
 		var dir = (grapple_point - global_position).normalized()
 		velocity += dir * grapple_strength * delta
-		velocity.y += gravity * 0.2 * delta   # 20% gravity during grapple
+		velocity.y += gravity * 0.2 * delta
 	else:
 		velocity.y += gravity * delta
 	if Input.is_action_pressed("Restart"):
@@ -34,14 +36,6 @@ func _physics_process(delta: float) -> void:
 
 	if Input.is_action_just_pressed("Jump") and is_on_floor():
 		velocity.y = jump_power
-	#if Input.is_action_just_pressed("Crouch"):
-		#scale.y /= 2
-		#$CollisionShape2D.shape.extents.y /= 2
-		#$CollisionShape2D.position.y += $CollisionShape2D.shape.extents.y
-	#if Input.is_action_just_released("Crouch"):
-		#scale.y *= 2
-		#$CollisionShape2D.shape.extents.y *= 2
-		#$CollisionShape2D.position.y -= $CollisionShape2D.shape.extents.y / 2
 	var direction := Input.get_axis("West", "East")
 	if direction:
 		velocity.x = direction * speed
