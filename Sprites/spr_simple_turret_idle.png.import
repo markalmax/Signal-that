@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://7k1ydssvsije"
-path="res://.godot/imported/New Piskel.png-4b57200a9b5d4d6f89cce1bdbbdb2eec.ctex"
+uid="uid://bwwxjlw6uh2yn"
+path="res://.godot/imported/spr_simple_turret_idle.png-caf84f193d08a2ef2c5af6c19e664ed8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://New Piskel.png"
-dest_files=["res://.godot/imported/New Piskel.png-4b57200a9b5d4d6f89cce1bdbbdb2eec.ctex"]
+source_file="res://Sprites/spr_simple_turret_idle.png"
+dest_files=["res://.godot/imported/spr_simple_turret_idle.png-caf84f193d08a2ef2c5af6c19e664ed8.ctex"]
 
 [params]
 

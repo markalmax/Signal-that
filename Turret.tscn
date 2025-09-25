@@ -1,8 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://c0kd3i8i5fett"]
-
-[ext_resource type="Texture2D" uid="uid://bwwxjlw6uh2yn" path="res://spr_simple_turret_idle.png" id="1_w3f5i"]
-
-[node name="Turret" type="Node2D"]
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_w3f5i")

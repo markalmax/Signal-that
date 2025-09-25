@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c2a4fbhjqabdu"
-path="res://.godot/imported/skeleton_game_tileset.png-d880b07b775f0680b818603448385c80.ctex"
+uid="uid://bifdcnod3ojrk"
+path="res://.godot/imported/spr_simple_bullet.png-e8ac3b5e07457f10b5dd3d9f569d3cf8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://skeleton_game_tileset.png"
-dest_files=["res://.godot/imported/skeleton_game_tileset.png-d880b07b775f0680b818603448385c80.ctex"]
+source_file="res://Sprites/spr_simple_bullet.png"
+dest_files=["res://.godot/imported/spr_simple_bullet.png-e8ac3b5e07457f10b5dd3d9f569d3cf8.ctex"]
 
 [params]
 
