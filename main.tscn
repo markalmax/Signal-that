@@ -288,6 +288,8 @@ texture = ExtResource("1_ig7tw")
 [node name="Camera2D" type="Camera2D" parent="player"]
 limit_smoothed = true
 position_smoothing_speed = 1.0
+editor_draw_limits = true
+editor_draw_drag_margin = true
 
 [node name="TurretContainer" type="Node2D" parent="."]
 
@@ -312,3 +314,7 @@ script = ExtResource("6_7mycd")
 player_path = NodePath("../../player")
 distance_label_path = NodePath("../Score")
 highscore_label_path = NodePath("../HighScore")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
