@@ -4,7 +4,7 @@ extends Node2D
 @export var spawn_interval: float = 600.0
 @export var spawn_ahead: float = 2000.0
 @export var random_offset: float = 150.0
-@export var turret_scene: PackedScene   # <-- Added this
+@export var turret_scene: PackedScene
 
 var last_spawn_x: float = 0.0
 var player_ref: Node2D
@@ -18,7 +18,6 @@ func _process(_delta: float) -> void:
 		return
 	var player_x = player_ref.global_position.x
 	
-	# keep spawning turrets ahead of the player
 	while last_spawn_x < player_x + spawn_ahead:
 		_spawn_turret(last_spawn_x + spawn_interval)
 		last_spawn_x += spawn_interval
