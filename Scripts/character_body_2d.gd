@@ -12,6 +12,7 @@ var grapple_point_left: Vector2
 var is_grappling_right: bool = false
 var grapple_point_right: Vector2
 
+@onready var sprite: Sprite2D = $Sprite2D
 @onready var rope_left: Line2D = $Line2
 @onready var rope_right: Line2D = $Line2D
 @onready var ray_left: RayCast2D = $RayCast2D
@@ -59,6 +60,10 @@ func _physics_process(delta: float) -> void:
 	var direction := Input.get_axis("West", "East")
 	if direction:
 		velocity.x = direction * speed
+		if direction < 0:
+			sprite.flip_h = true
+		else:
+			sprite.flip_h = false
 	else:
 		velocity.x = move_toward(velocity.x, 0, speed)
 

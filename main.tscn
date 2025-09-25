@@ -1,10 +1,10 @@
 [gd_scene load_steps=15 format=4 uid="uid://c3ie1ef0vrqrw"]
 
 [ext_resource type="Script" uid="uid://chwgmmf4n4r6l" path="res://Scripts/character_body_2d.gd" id="1_h2yge"]
-[ext_resource type="Texture2D" uid="uid://c0iupro16utxs" path="res://images/icon.svg" id="1_ig7tw"]
 [ext_resource type="Texture2D" uid="uid://c2a4fbhjqabdu" path="res://Sprites/skeleton_game_tileset.png" id="2_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://c0kd3i8i5fett" path="res://Prefabs/Turret.tscn" id="2_lquwl"]
 [ext_resource type="Script" uid="uid://cy64lekc1805i" path="res://Scripts/TurretSpawn.gd" id="4_1bvp3"]
+[ext_resource type="Texture2D" uid="uid://c3e81f7p13vpc" path="res://Sprites/purpleguy.png" id="5_7mycd"]
 [ext_resource type="Script" uid="uid://bybx7pgkbo5k0" path="res://Scripts/Score.gd" id="6_7mycd"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_h2yge"]
@@ -246,7 +246,7 @@ sources/0 = SubResource("TileSetAtlasSource_h2yge")
 pattern_0 = SubResource("TileMapPattern_h2yge")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0xm2m"]
-size = Vector2(126, 127)
+size = Vector2(65, 127)
 
 [sub_resource type="SystemFont" id="SystemFont_7mycd"]
 subpixel_positioning = 0
@@ -276,10 +276,11 @@ tile_set = SubResource("TileSet_1bvp3")
 script = ExtResource("1_h2yge")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="player"]
+position = Vector2(-0.5, 0)
 shape = SubResource("RectangleShape2D_0xm2m")
 
 [node name="Sprite2D" type="Sprite2D" parent="player"]
-texture = ExtResource("1_ig7tw")
+texture = ExtResource("5_7mycd")
 
 [node name="Line2" type="Line2D" parent="player"]
 
